@@ -1,0 +1,24 @@
+.descripcionCorto {
+    color: #0063ae;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.btnAceptar {
+    background-color: #0063ae;
+    color: white;
+}
+
+.mensajeLargo{
+    text-align: justify;
+    margin: 25px;
+}
+
+.modal-header {
+    background-color: #0063ae;
+    color: white;
+}
+
+.modal-footer{
+    border:none;
+}

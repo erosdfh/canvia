@@ -1,0 +1,150 @@
+{
+    "listRegDatosComunes": [
+      {
+      "numRuc": "10013236542",
+        "desRazonSocial": "Rodriguez Carbajas Eliot",
+        "codDepen": "0020",
+        "fecMovimiento": "31/08/2024 00:00:00",
+        "codMovimiento": "mIGV015.02",
+        "desMovimiento": "Declaración Jurada Original",
+        "codDocumento": "0621",
+        "desDocumento": "Declaración Juarada",
+        "numOrdenDocumento": "012546",
+        "fecDocumento": "15/02/2023 05:08:42",
+        "codTipDeclaracion": "01",
+        "codDocumentoAso": "1662",
+        "desDocumentoAso": "Pagos varios",
+        "numOrdenDocumentoAso": "65854",
+             "indRegInconsistente": "0",
+        "datosParaCA0016":
+          {
+            "perTrib": "202501",
+            "codTributo": "010101",
+            "mtoGenerado": 5000,
+            "mtoUtilizado": 1000,
+            "mtoSaldoAcumFecha": 3500,
+            "indSaldoInconsistente": "0"        
+          },
+        "datosParaCA0017":
+          {
+            "codTributo": "",
+            "codTipoBP": "",
+            "fecPago": "",
+            "codTributoDocAso": "",
+            "fecDocumentoAso": "",
+            "perTributarioDocAso": "",
+            "mtoTributo": 0,
+            "mtoIntereses": 0,
+            "mtoNoImputado": 0,
+            "mtoTotalPagado": 0,
+            "mtoSaldoAcumFecha": 0,
+            "indSaldoInconsistente": ""              
+          },
+        "datosParaCA0018": 
+          {
+            "perTrib": "",
+            "codTributo": "",
+            "mtoGenerado": 0,
+            "mtoDevuelto": 0,
+            "mtoCompensado": 0,
+            "mtoUtilizado": 0,
+            "mtoIntereses": 0,
+            "mtoSaldoAcumFecha": 0,
+            "indSaldoInconsistente": ""                  
+          },
+        "datosParaCA0019": 
+          {
+            "perTrib": "",
+            "codTributo": "",
+            "mtoGenerado": 0,
+            "mtoDevuelto": 0,
+            "mtoCompensado": 0,
+            "mtoUtilizado": 0,
+            "mtoIntereses": 0,
+            "mtoSaldoAcumFecha": 0,
+            "indSaldoInconsistente": ""                   
+          },
+        "datosParaCA0020":
+          {
+            "perTrib": "",
+            "mtoCas100": 0,
+            "mtoCas160": 0,
+            "mtoCas102": 0,
+            "mtoCas154": 0,
+            "mtoCas162": 0,
+            "mtoCas106": 0,
+            "mtoCas105": 0       
+          }        
+        },
+      {
+        "numRuc": "10013236542",
+        "desRazonSocial": "Rodriguez Carbajas Eliot",
+        "fecMovimiento": "02/09/2024 10:25:45",
+        "codMovimiento": "mIGV015.50",
+        "desMovimiento": "Cierre de Declaración Jurada Original",
+        "codDocumento": "1662",
+        "desDocumento": "Pagos Varios",
+        "numOrdenDocumento": "012546",
+        "fecDocumento": "15/02/2023 05:08:42",
+        "codTipDeclaracion": "01",
+        "codDocumentoAso": "1052",
+        "desDocumentoAso": "Con Documentos Valorados",
+        "numOrdenDocumentoAso": "65854",
+        "indRegInconsistente": "0",
+        "datosParaCA0016": {
+          "perTrib": "202501",
+          "codTributo": "010101",
+          "mtoGenerado": 5000,
+          "mtoUtilizado": 1000,
+          "mtoSaldoAcumFecha": 3500,
+          "indSaldoInconsistente": "0"
+        },
+        "datosParaCA0017": {
+          "codTributo": "",
+          "codTipoBP": "",
+          "fecPago": "",
+          "codTributoDocAso": "",
+          "fecDocumentoAso": "",
+          "perTributarioDocAso": "",
+          "mtoTributo": 0,
+          "mtoIntereses": 0,
+          "mtoNoImputado": 0,
+          "mtoTotalPagado": 0,
+          "mtoSaldoAcumFecha": 0,
+          "indSaldoInconsistente": ""
+        },
+        "datosParaCA0018": {
+          "perTrib": "",
+          "codTributo": "",
+          "mtoGenerado": 0,
+          "mtoDevuelto": 0,
+          "mtoCompensado": 0,
+          "mtoUtilizado": 0,
+          "mtoIntereses": 0,
+          "mtoSaldoAcumFecha": 0,
+          "indSaldoInconsistente": ""
+        },
+        "datosParaCA0019": {
+          "perTrib": "",
+          "codTributo": "",
+          "mtoGenerado": 0,
+          "mtoDevuelto": 0,
+          "mtoCompensado": 0,
+          "mtoUtilizado": 0,
+          "mtoIntereses": 0,
+          "mtoSaldoAcumFecha": 0,
+          "indSaldoInconsistente": ""
+        },
+        "datosParaCA0020": {
+          "perTrib": "",
+          "mtoCas100": 0,
+          "mtoCas160": 0,
+          "mtoCas102": 0,
+          "mtoCas154": 0,
+          "mtoCas162": 0,
+          "mtoCas106": 0,
+          "mtoCas105": 0
+        }
+      }
+    ]
+  }

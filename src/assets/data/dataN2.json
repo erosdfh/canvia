@@ -1,0 +1,84 @@
+{
+    "listCuentas": [
+        {
+            "listRegistrosCA0016": [
+                {
+                    "perTrib": "202401",
+                    "mtoSaldoAFavorPer": 0.0,
+                    "mtoSaldoAFavorPerAnt": 0.0,
+                    "mtoUtilizado": 0.0,
+                    "mtoSaldoTotPer": 0.0
+                },
+                {
+                    "perTrib": "202402",
+                    "mtoSaldoAFavorPer": 40.0,
+                    "mtoSaldoAFavorPerAnt": 10.0,
+                    "mtoUtilizado": 30.0,
+                    "mtoSaldoTotPer": 20.0
+                }
+            ],
+            "listRegistrosCA0021": [
+                {
+                    "perTrib": "202401",
+                    "mtoSaldoAFavorPer": 0.0,
+                    "mtoSaldoAFavorPerAnt": 0.0,
+                    "mtoUtilizado": 0.0,
+                    "mtoSaldoTotPer": 0.0
+                },
+                {
+                    "perTrib": "202402",
+                    "mtoSaldoAFavorPer": 40.0,
+                    "mtoSaldoAFavorPerAnt": 10.0,
+                    "mtoUtilizado": 30.0,
+                    "mtoSaldoTotPer": 20.0
+                }
+            ],
+            "listRegistrosCA0017": [
+                {
+                    "perTrib": "202401",
+                    "codTrib": "010101",
+                    "mtoCompensadoRes": 12.0,
+                    "mtoPagado": 10.0,
+                    "mtoDevuelto": 20.0,
+                    "mtoCompensado": 30.0,
+                    "mtoTotal": 40.0
+                }
+            ],
+            "listRegistrosCA0018": [
+                {
+                    "perTrib": "202401",
+                    "mtoSaldoAFavorPer": 3500,
+                    "mtoSaldoAFavorPerAnt": 1500,
+                    "mtoTrib": 3000,
+                    "mtoDevuelto": 20.0,
+                    "mtoCompensado": 30.0,
+                    "mtoTotal": 40.0
+                }
+            ],
+            "listRegistrosCA0022": [],
+            "listRegistrosCA0019": [{
+                "perTrib": "202401",
+                "mtoSaldoAFavorPer": 3500,
+                "mtoSaldoAFavorPerAnt": 1500,
+                "mtoTrib": 3000,
+                "mtoDevuelto": 20.0,
+                "mtoCompensado": 30.0,
+                "mtoTotal": 40.0
+            }],
+            "listRegistrosCA0023": [],
+            "listRegistrosCA0020": [
+                {
+                    "perTrib": "202401",
+                    "coeficiente": 63.78
+                },{
+                    "perTrib": "202402",
+                    "coeficiente": 63.76
+                },{
+                    "perTrib": "202403",
+                    "coeficiente": 63.53
+                }
+            ],
+            "listRegistrosCA0024": []
+        }
+    ]
+}

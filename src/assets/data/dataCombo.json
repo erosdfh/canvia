@@ -1,0 +1,49 @@
+{
+  "listCombo": [
+    {
+      "id": "01",
+      "numCta": "CA0016",
+      "descripcion": "CA0016-Saldo a favor del periodo anterior del IGV"
+    },
+    {
+      "id": "02",
+      "numCta": "CA0017",
+      "descripcion": "CA0017-Pagos contra el total de la deuda tributaria"
+    },
+    {
+      "id": "03",
+      "numCta": "CA0018",
+      "descripcion": "CA0018-Saldo de percepciones de periodos anteriores"
+    },
+    {
+      "id": "04",
+      "numCta": "CA0019",
+      "descripcion": "CA0019-Saldo de recepciones de periodos anteriores"
+    },
+    {
+      "id": "05",
+      "numCta": "CA0020",
+      "descripcion": "CA0020-Coeficiente IGV"
+    },
+    {
+      "id": "06",
+      "numCta": "CA0021",
+      "descripcion": "CA0021-Saldo a favor del periodo anterior del IGV por lo declarado"
+    },
+    {
+      "id": "07",
+      "numCta": "CA0022",
+      "descripcion": "Saldo de percepciones de periodos anteriores por lo declarado"
+    },
+    {
+      "id": "09",
+      "numCta": "CA0023",
+      "descripcion": "Saldo de retenciones de periodos anteriores por lo declarado"
+    },
+    {
+      "id": "10",
+      "numCta": "CA0024",
+      "descripcion": "Coeficiente IGV por lo declarado"
+    }
+  ]
+}

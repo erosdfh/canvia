@@ -1,0 +1,13 @@
+.modal-footer{
+    border:none;
+    padding-top: 0;
+}
+
+.mensaje{
+    text-align: justify;
+}
+
+.modal-header {
+    background-color: #0448AA !important;
+    color: white;
+}

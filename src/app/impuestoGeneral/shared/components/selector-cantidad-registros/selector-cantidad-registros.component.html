@@ -1,0 +1,8 @@
+<div class="form-group form-inline mb-2">
+  <span class="mr-2"> Mostrar: </span>
+
+  <select class="custom-select" style="width: auto" [(ngModel)]='cantidadRegistros' (ngModelChange)='cambiarCantidadRegistros()'>
+    <option *ngFor='let item of lstCantidadRegistros' [ngValue]='item'>{{item}}</option>
+  </select>
+  <span class="mr-2"> &nbsp; registros </span>
+</div>

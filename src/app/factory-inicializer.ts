@@ -1,0 +1,21 @@
+import { environment } from "src/environments/environment";
+import { AutenticacionService } from "./impuestoGeneral/services/autenticacion.service";
+
+export function FactoryInicializer(
+  autenticacionService: AutenticacionService,
+) {
+  return (): Promise<void> => new Promise<void>(async (res, rej) => {
+    let token = 'eyJraWQiOiJhcGkuc3VuYXQuZ29iLnBlLmtpZDIwMSIsInR5cCI6IkpXVCIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiIiLCJhdWQiOiJbe1wiYXBpXCI6XCJodHRwczpcL1wvYXBpLWludHJhbmV0LnN1bmF0LnBlcnVcIixcInJlY3Vyc29cIjpbe1wiaWRcIjpcIlwvbG9hZGVyXC9yZWNhdWRhY2lvblwvdHJpYnV0YXJpYVwvZ2VzdGlvbnNhbGRvc1wiLFwiaW5kaWNhZG9yXCI6XCIxXCIsXCJndFwiOlwiMTAwMTAwXCJ9XX1dIiwidXNlcmRhdGEiOnsibnVtUlVDIjoiIiwidGlja2V0IjoiMjkwMDk0MTEwODE1IiwibnJvUmVnaXN0cm8iOiJRSDU1IiwiYXBlTWF0ZXJubyI6IlNBUk1JRU5UTyIsImxvZ2luIjoiTVBFTEFFWiIsIm5vbWJyZUNvbXBsZXRvIjoiUGVsYWV6IFNhcm1pZW50byBNb2lzZXMiLCJub21icmVzIjoiTU9JU0VTIiwiY29kRGVwZW5kIjoiMDA3MSIsImNvZFRPcGVDb21lciI6IiIsImNvZENhdGUiOiJYMSIsIm5pdmVsVU8iOjYsImNvZFVPIjoiMVUyMTA4IiwiY29ycmVvIjoicHJ1ZWJhc0BzdW5hdC5nb2IucGUiLCJ1c3VhcmlvU09MIjoiIiwiaWQiOiIiLCJkZXNVTyI6IkRJVklTScOTTiBERSBERVNBUlJPTExPIERFIFNJU1RFTUFTIFRSSUJVVEFSSU9TIC0gU1VQRVJWSVNJw5NOIDgiLCJkZXNDYXRlIjoiQ09OVFJBVE8gQURNSU5JU1RSQVRJVk8gREUgU0VSVklDSU9TIiwiYXBlUGF0ZXJubyI6IlBFTEFFWiIsImlkQ2VsdWxhciI6bnVsbCwibWFwIjp7ImNvZFVPVmlzIjoiMVUyMTA4IiwiaW5kQWR1YW5hIjpudWxsLCJjb2RBbnRlIjpudWxsLCJuaXZlbF9mdW5jIjoiMSIsInJvbGVzIjpudWxsLCJpZE1lbnUiOiIyOTAwOTQxMTA4MTUiLCJ0aXBPcmlnZW4iOiJJQSIsInRpcFBlcnMiOm51bGx9fSwibmJmIjoxNzExODA5NjU0LCJjbGllbnRJZCI6ImQyOTlmZDE2LThjNDMtNGY4Yi1iYmExLTFkOTgzNzBmYTg4NCIsImlzcyI6Imh0dHBzOlwvXC9hcGktc2VndXJpZGFkLnN1bmF0LmdvYi5wZVwvdjFcL2NsaWVudGVzc3VuYXRcL2QyOTlmZDE2LThjNDMtNGY4Yi1iYmExLTFkOTgzNzBmYTg4NFwvb2F1dGgyXC90b2tlblwvIiwicHJvZmlsZXMiOlsiW10iXSwiZXhwIjoxNzExODEzMjg0LCJncmFudFR5cGUiOiJhdXRob3JpemF0aW9uX3Rva2VuIiwiaWF0IjoxNzExODA5Njg0fQ.1LxlFiyCLXqrUxydwX9rdpaEvbLa4STTrbjfLYmpuo2hPBrrkborgGwet4HlpE1yuuXfW-aglqDtweiWH4Ub8BWxKXI_IV0qQniydokKl74Vt3GzJ0foCJwu_rxA0AJZF9OiVCjbSMrokpiEA9XkynOn8QM8GXwYw5ogqf1crWkSl9f438AOctmVF_mONk2FyIcfpOSUw6fWqPus4aPOFTxgTdmcskvXc4DVbehw51IP7C9A6otMVdsjOzUUmpLtp3DD_Oaj7KN4_LLFapUZKQT9C0G6EbTltrY102OAB21QAZqlKfKzRrsQgqw0YIev9lDAGu47mXTK9I91BUsYAw';
+    try {
+      if (environment.production === true) {
+        const urlParams = new URLSearchParams(window.location.search);
+        token = urlParams.get('token')?.toString()?.trim() || '';
+      }
+      autenticacionService.generateToken(token);
+      res();
+      return;
+    } catch (e) {
+      rej(e);
+    }
+  })
+}

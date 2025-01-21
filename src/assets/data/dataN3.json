@@ -1,0 +1,77 @@
+{
+  "listRegDatosDomunes": [
+      {
+          "fecMovimiento": "2024-02-20T05:00:00.000+00:00",
+          "codMovimiento": "mIGV027.08",
+          "desMovimiento": "Acumulación/utilización retenciones DJ 621 rectificatoria",
+          "codTributo": "010101",
+          "codDocumento": "0621",
+          "desDocumento": "",
+          "numOrdenDocumento": "750007141",
+          "fecDocumento": "2024-02-27T20:46:07.000+00:00",
+          "codTipDeclaracion": "2",
+          "codDocumentoAso": "0621",
+          "desDocumentoAso": null,
+          "numOrdenDocumentoAso": "750007141",
+          "mtoSaldoAcumFecha": 0,
+          "indRegInconsistente": "0",
+          "indSaldoInconsistente": "0",
+          "datosParaCA0016": {
+            "perTrib": "202401",
+            "mtoGenerado": 0.00,
+            "mtoDevuelto": 10,
+            "mtoCompensado": 0,
+            "mtoUtilizado": 0.00,
+            "mtoIntereses": 0
+        },
+          "datosParaCA0021": null,
+          "datosParaCA0017": null,
+          "datosParaCA0018": null,
+          "datosParaCA0022": null,
+          "datosParaCA0019": null,
+          "datosParaCA0023": {
+              "perTrib": "202401",
+              "mtoGenerado": 0.00,
+              "mtoDevuelto": 10,
+              "mtoCompensado": 0,
+              "mtoUtilizado": 0.00,
+              "mtoIntereses": 0
+          },
+          "datosParaCA0020": null,
+          "datosParaCA0024": null
+      },
+      {
+          "fecMovimiento": "2024-02-20T05:00:00.000+00:00",
+          "codMovimiento": "mIGV027.58",
+          "desMovimiento": "Cierre Acumulación/utilización retenciones DJ 621 rectificatoria",
+          "codTributo": "010101",
+          "codDocumento": "0621",
+          "desDocumento": "",
+          "numOrdenDocumento": "750007141",
+          "fecDocumento": "2024-02-27T20:46:07.000+00:00",
+          "codTipDeclaracion": "0",
+          "codDocumentoAso": "0621",
+          "desDocumentoAso": null,
+          "numOrdenDocumentoAso": "750007141",
+          "mtoSaldoAcumFecha": 0,
+          "indRegInconsistente": "0",
+          "indSaldoInconsistente": "0",
+          "datosParaCA0016": null,
+          "datosParaCA0021": null,
+          "datosParaCA0017": null,
+          "datosParaCA0018": null,
+          "datosParaCA0022": null,
+          "datosParaCA0019": null,
+          "datosParaCA0023": {
+              "perTrib": "202401",
+              "mtoGenerado": 0.00,
+              "mtoDevuelto": 12,
+              "mtoCompensado": 0,
+              "mtoUtilizado": 0.00,
+              "mtoIntereses": 0
+          },
+          "datosParaCA0020": null,
+          "datosParaCA0024": null
+      }
+  ]
+}
