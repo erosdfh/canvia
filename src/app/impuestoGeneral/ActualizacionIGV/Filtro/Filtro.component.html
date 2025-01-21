@@ -15,54 +15,75 @@
               Filtros de búsqueda
             </button>
           </legend>
-          <!--form [formGroup]="formService.getForm">
+          <form [formGroup]="getFormFiltro">
             <div class="row">
-              <div class="col-sm-8 col-lg-7" style="font-size: 13px;">
-                <div class="col-lg-12">
-                  <div class="mb-3 row">
-                    <label class="col-sm-2 col-lg-4 col-form-label">RUC (*)</label>
-                    <div class="col-sm-10 col-lg-8">
-                      <input type="text" id="numRuc" formControlName="numRuc"
-                         onlyNumber class="form-control shadow-none"
-                        placeholder="Ingrese número ruc" maxlength="11"
-                        [class.is-invalid]="formService.fieldNumRuc?.invalid && (formService.fieldNumRuc?.touched || formService.fieldNumRuc?.dirty)" />
-                      <div class="invalid-feedback"
-                        *ngIf="formService.fieldNumRuc?.invalid && (formService.fieldNumRuc?.touched || formService.fieldNumRuc?.dirty)">
-                        <div *ngIf="formService.fieldNumRuc?.hasError('required')">Debe ingresar un RUC</div>
-                        <div *ngIf="formService.fieldNumRuc?.hasError('pattern')">Debe ingresar un RUC válido</div>
+              <div class="col-lg-12">
+                <div class="mb-3 row">
+                  <label class="col-sm-2 col-lg-4 col-form-label">Motivo de Actualización</label>
+                  <div class="col-sm-6 col-lg-5">
+                    <ng-select appearance="outline" bindLabel="valor" bindValue="codigo" [closeOnSelect]="false"
+                    [items]="motivoActualizacion" [clearable]="true" [searchable]="false"></ng-select>
+                  </div>
+                </div>
+                <div class="mb-3 row">
+                  <label class="col-sm-3 col-lg-4 col-form-label">Número de RUC: <span style="color: red">(*)</span></label>
+                  <div class="col-sm-9 col-lg-3">
+                    <input>
+                  </div>
+                </div>
+                <div class="mb-3 row">
+                  <label class="col-sm-2 col-lg-4 col-form-label">Saldo Acumulado: <span style="color: red">(*)</span></label>
+                  <div class="col-sm-6 col-lg-5">
+                    <ng-select appearance="outline" bindValue="codCuenta" bindLabel= "codCuenta"  [closeOnSelect]="false"
+                               placeholder="Seleccione una opción" [items]="listSaldoAcumulado" [clearable]="true" [searchable]="false"></ng-select>
+                  </div>
+                </div>
+                <div class="mb-3 row">
+                  <label class="col-sm-2 col-lg-4 col-form-label">Ejercicio: <span style="color: red">(*)</span></label>
+                  <div class="col-sm-6 col-lg-3">
+                    <ng-select appearance="outline" bindValue="codCuenta" bindLabel= "codCuenta"  [closeOnSelect]="false"
+                               placeholder="Seleccione una opción" [items]="listSaldoAcumulado" [clearable]="true" [searchable]="false"></ng-select>
+                  </div>
+                </div>
+                <div class="mb-3 row">
+                  <label class="col-sm-2 col-lg-4 col-form-label">Tributo: <span style="color: red">(*)</span></label>
+                  <div class="col-sm-6 col-lg-3">
+                    <ng-select appearance="outline" bindValue="codCuenta" bindLabel= "codCuenta"  [closeOnSelect]="false"
+                               placeholder="Seleccione una opción" [items]="listSaldoAcumulado" [clearable]="true" [searchable]="false"></ng-select>
+                  </div>
+                </div>
+                <div class="mb-3 row">
+                  <label class="col-sm-2 col-lg-4 col-form-label">Periodo Tributario <span style="color: red">(*)</span></label>
+                  <div class="col-sm-6 col-lg-4">
+                    <div class="mb-3 row">
+                      <div class="col-sm-6 col-lg-2"><label>Año</label></div>
+                      <div class="col-sm-6 col-lg-4">
+                        <ng-select appearance="outline" bindValue="codCuenta" bindLabel= "codCuenta"  [closeOnSelect]="false"
+                                   placeholder="Seleccione una opción" [items]="listSaldoAcumulado" [clearable]="true" [searchable]="false"></ng-select>
+                      </div>
+                      <div class="col-sm-6 col-lg-2"><label>Mes</label></div>
+                      <div class="col-sm-6 col-lg-4">
+                        <ng-select appearance="outline" bindValue="codCuenta" bindLabel= "codCuenta"  [closeOnSelect]="false"
+                                   placeholder="Seleccione una opción" [items]="listSaldoAcumulado" [clearable]="true" [searchable]="false"></ng-select>
                       </div>
                     </div>
-
                   </div>
                 </div>
-                <div class="col-lg-12">
-                  <div class="mb-3 row">
-                    <label class="col-sm-2 col-lg-4 col-form-label">Nombre o razón social</label>
-                    <div class="col-sm-10 col-lg-8">
-                      <input type="text" class="form-control shadow-none" formControlName="nomRazonSocial"
-                        placeholder="Razón social" />
-                    </div>
-                  </div>
-                </div>
+              </div>
             </div>
-          </form-->
+          </form>
+          <div class="col-sm-12 col-lg-12 row" >
+            <div class="col-sm-8"><span style="color: red"> (*) Campos Obligatorios </span> </div>
+            <div class="col-sm-2" style="text-align: end;">
+              <button type="button" class="btn-sunat shadow-none px-4 pb-2" data-bs-placement="bottom"><i class="fa fa-search" aria-hidden="true"></i>&nbsp;
+                Buscar</button>
+            </div>
+            <div class="col-sm-2" style="text-align: end;">
+              <button type="button" class="btn-sunat shadow-none px-4 pb-2" data-bs-placement="bottom"><i class="fa fa-arrow-left" aria-hidden="true"></i>&nbsp;
+                Regresar</button>
+            </div>
+          </div>
         </fieldset>
-      </div>
-    </div>
-    <br>
-    <fieldset class="linea-caja" >
-      <div class="container-fluid px-4">
-        <div class="row">
-        </div>
-      </div>
-    </fieldset>
-    <br>
-    <div class="col-sm-12 col-lg-12 row" >
-      <div class="col-sm-3"></div>
-      <div class="col-sm-9" style="text-align: end;">
-        <button type="button" class="btn-sunat shadow-none px-4 pb-2" data-bs-placement="bottom"><i class="fa fa-file-excel-o" aria-hidden="true"></i>&nbsp;
-          Aceptar</button>
-
       </div>
     </div>
   </fieldset>
