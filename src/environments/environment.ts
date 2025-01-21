@@ -4,6 +4,8 @@
 
 export const environment = {
   production: false,
-  host: 'https://api-cuentaunica.sunat.gob.pe',
-  path: '/v1/recaudacion/tributaria/gestionsaldos/consultasaldoacumulado/',
+  /*host: 'https://api-cuentaunica.sunat.gob.pe',
+  path: '/v1/recaudacion/tributaria/gestionsaldos/consultasaldoacumulado/',*/
+  host: 'localhost:3001',
+  path: 'v1/recaudacion/tributaria/gestionsaldo/eventomanual/t/parametria/consultar',
 };
