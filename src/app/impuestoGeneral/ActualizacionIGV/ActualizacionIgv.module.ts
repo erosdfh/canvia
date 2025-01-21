@@ -6,14 +6,12 @@ import { NgSelectModule } from '@ng-select/ng-select';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SharedModule } from '../shared/shared.module';
-import { OnlyNumberDirective } from '../services/onlyNumber';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { TableModule } from 'primeng/table';
 
 @NgModule({
   declarations: [
     ActualizacionIGVComponent,
-    OnlyNumberDirective
   ],
   imports: [
     ActualizacionIGVRoutingModule,
