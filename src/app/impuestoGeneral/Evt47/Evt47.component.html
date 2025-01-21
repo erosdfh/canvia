@@ -1,72 +1,94 @@
-<br>
+<br />
 <div class="containerItem">
-  <nav class="navbar navbar-dark bg-primary" style="background-color: #0063ae !important;">
-
+  <nav
+    class="navbar navbar-dark bg-primary"
+    style="background-color: #0063ae !important"
+  >
     <div class="container-fluid">
-      <span class="navbar-brand mb-0 h1 fw-bold">SISTEMA DE SALDOS ACUMULADOS</span>
+      <span class="navbar-brand mb-0 h1 fw-bold">
+        SISTEMA DE SALDOS ACUMULADOS
+      </span>
     </div>
   </nav>
-  <fieldset class="linea-caja col-sm-12 mb-5 pb-5" style="border-top: 0;">
+  <fieldset class="linea-caja col-sm-12 mb-5 pb-5" style="border-top: 0">
     <div class="container-fluid px-4">
       <div class="col-12 pt-4">
-        <fieldset class="linea-caja col-sm-12 pb-2">
-          <legend>
-            <button style="background-color: #ffffff !important; border: #e9ecef;">
-              Filtros de búsqueda
-            </button>
-          </legend>
-          <!--form [formGroup]="formService.getForm">
-            <div class="row">
-              <div class="col-sm-8 col-lg-7" style="font-size: 13px;">
-                <div class="col-lg-12">
-                  <div class="mb-3 row">
-                    <label class="col-sm-2 col-lg-4 col-form-label">RUC (*)</label>
-                    <div class="col-sm-10 col-lg-8">
-                      <input type="text" id="numRuc" formControlName="numRuc"
-                         onlyNumber class="form-control shadow-none"
-                        placeholder="Ingrese número ruc" maxlength="11"
-                        [class.is-invalid]="formService.fieldNumRuc?.invalid && (formService.fieldNumRuc?.touched || formService.fieldNumRuc?.dirty)" />
-                      <div class="invalid-feedback"
-                        *ngIf="formService.fieldNumRuc?.invalid && (formService.fieldNumRuc?.touched || formService.fieldNumRuc?.dirty)">
-                        <div *ngIf="formService.fieldNumRuc?.hasError('required')">Debe ingresar un RUC</div>
-                        <div *ngIf="formService.fieldNumRuc?.hasError('pattern')">Debe ingresar un RUC válido</div>
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-                <div class="col-lg-12">
-                  <div class="mb-3 row">
-                    <label class="col-sm-2 col-lg-4 col-form-label">Nombre o razón social</label>
-                    <div class="col-sm-10 col-lg-8">
-                      <input type="text" class="form-control shadow-none" formControlName="nomRazonSocial"
-                        placeholder="Razón social" />
-                    </div>
-                  </div>
-                </div>
+        <form [formGroup]="manualEventoForm.getForm">
+          <fieldset class="linea-caja col-sm-12 pb-2">
+            <legend>
+              <button
+                style="background-color: #ffffff !important; border: #e9ecef"
+              >
+                Registro de eventos
+              </button>
+            </legend>
+            <div class="row mt-4 align-items-center">
+              <label
+                for="tipoevento"
+                class="control-label col-xl-3 col-lg-3 col-md-4 col-sm-5 text-end"
+              >
+                Tipo de evento <span style="color: red">(*)</span>:
+              </label>
+              <div class="col-xl-6 col-lg-7 col-md-8 col-sm-7">
+                <ng-select
+                  formControlName="tipoevento"
+                  [multiple]="true"
+                  appearance="outline"
+                  bindLabel="value"
+                  [notFoundText]="'Sin resultados'"
+                  bindValue="codigo"
+                  [closeOnSelect]="false"
+                  [items]="listaTipoEvento"
+                  [clearable]="true"
+                  placeholder="Seleccione una opción"
+                  [searchable]="true"
+                >
+                  <ng-template ng-header-tmp let-items="items">
+                    <input
+                      id="todos"
+                      type="checkbox"
+                      [checked]="selectChekedCombosTipoEvento()"
+                      (change)="toggleCheckAllCombosTipoEvento($event)"
+                    />
+                    <label for="todos">Seleccionar todos</label>
+                  </ng-template>
+                  <ng-template
+                    ng-option-tmp
+                    let-item="item"
+                    let-item$="item$"
+                    let-index="index"
+                  >
+                    <input
+                      id="item-{{ index }}"
+                      type="checkbox"
+                      [checked]="item$.selected"
+                    />
+                    <label for="item-{{ index }}">{{ item.value }}</label>
+                  </ng-template>
+                </ng-select>
+                <div class="invalid-feedback"></div>
+              </div>
             </div>
-          </form-->
-        </fieldset>
+            <div class="row mt-3">
+              <label
+                class="control-label col-xl-3 col-lg-3 col-md-4 col-sm-5 text-end"
+              ></label>
+              <div class="col-xl-6 col-lg-7 col-md-8 col-sm-7">
+                <span style="color: red"> (*) Campos obligatorios: </span>
+              </div>
+            </div>
+          </fieldset>
+        </form>
       </div>
     </div>
-    <br>
-    <fieldset class="linea-caja" >
-      <div class="container-fluid px-4">
-        <div class="row">
-        </div>
-      </div>
-    </fieldset>
-    <br>
-    <div class="col-sm-12 col-lg-12 row" >
-      <div class="col-sm-3"></div>
-      <div class="col-sm-9" style="text-align: end;">
-        <button type="button" class="btn-sunat shadow-none px-4 pb-2" data-bs-placement="bottom"><i class="fa fa-file-excel-o" aria-hidden="true"></i>&nbsp;
-          Aceptar</button>
-
-      </div>
-    </div>
+    <br />
   </fieldset>
-
 </div>
-<ngx-spinner bdColor="rgba(255,255,255,0.45)" color="rgba(28,27,27,0.64)" size="medium" type="ball-scale"
-  [fullScreen]="true"></ngx-spinner>
+
+<ngx-spinner
+  bdColor="rgba(255,255,255,0.45)"
+  color="rgba(28,27,27,0.64)"
+  size="medium"
+  type="ball-scale"
+  [fullScreen]="true"
+></ngx-spinner>

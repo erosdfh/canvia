@@ -8,6 +8,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SharedModule } from '../shared/shared.module';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { TableModule } from 'primeng/table';
+import { AdministrarManualeventoService } from './administrar-manualevento.service';
 
 @NgModule({
   declarations: [Evt47Component],
@@ -22,7 +23,7 @@ import { TableModule } from 'primeng/table';
     NgxSpinnerModule,
     TableModule,
   ],
-  providers: [],
+  providers: [AdministrarManualeventoService],
   bootstrap: [Evt47Component],
 })
 export class Evt47Module {}
