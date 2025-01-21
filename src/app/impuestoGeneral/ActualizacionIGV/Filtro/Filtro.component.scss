@@ -1,0 +1,135 @@
+.Headboard {
+  text-align: center;
+  vertical-align: middle;
+}
+
+legend {
+  margin-top: -25px;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  border-radius: 0px;
+}
+
+@media screen and (min-width: 700px) {
+  .containerItem {
+    margin-left: 14px;
+  }
+}
+
+.paginacionResponsive {
+  margin-left: auto;
+  margin-right: 0;
+  display: block;
+  width: fit-content;
+}
+
+
+@media screen and (max-width: 700px) {
+  .paginacionResponsive {
+    width: 100%;
+  }
+
+  .responsiveFont {
+    font-size: 14px;
+  }
+}
+
+.table-responsive {
+  max-height: 680px !important;
+}
+.table th {
+  text-align: center;
+  vertical-align: middle;
+}
+
+table tr {
+  text-align: center;
+  min-width: 150px;
+}
+.bordeRedondo {
+  border-radius: 5px;
+  border: 1px solid #39c;
+  padding-block: 0.2rem;
+}
+
+.horizontal-inputs {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.input-wrapper {
+  margin-right: 10px; /* Espacio entre los inputs */
+  margin-bottom: 20px; /* Espacio entre las filas */
+}
+
+.input-wrapper div {
+  display: flex; /* Para que el input y el botón estén en línea */
+}
+
+.input-wrapper input {
+  margin-bottom: 5px; /* Espacio entre el input y el label */
+}
+
+.input-wrapper button {
+  margin-left: 2px; /* Espacio entre el input y el botón */
+}
+
+.input-wrapper label {
+  display: block; /* Para que el label se coloque debajo del input y el botón */
+
+}
+
+/* Estilos para el input de carga personalizado */
+.custom-file-upload {
+  display: inline-block;
+  position: relative;
+  font-family: Arial, sans-serif;
+}
+
+.custom-file-upload input[type="file"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 80%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.custom-file-upload label {
+  background-color: #0063ae;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.custom-file-upload label:hover {
+  background-color: #0063ae;
+}
+
+.custom-file-upload.disabled label {
+  opacity: 0.5 !important; /* Reducir la opacidad del label cuando el input esté deshabilitado */
+}
+
+.cabecera{
+  background-color: #0063ae !important; 
+  color: #ffffff !important;
+  text-align: center !important;
+  max-height: 50px; /* Altura máxima para permitir dos líneas de texto */
+  overflow: hidden; /* Oculta el contenido que excede la altura máxima */
+  white-space: normal !important; /* Permite saltos de línea dentro de la celda */
+  min-width: 150px !important;
+  
+}
+.mto-negativo {
+  color: red;
+}
+
+.fondo-gris{
+  background-color: #E6E6E6;
+}
+
+
+

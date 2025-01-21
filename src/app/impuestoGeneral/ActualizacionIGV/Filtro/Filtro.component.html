@@ -1,0 +1,72 @@
+<br>
+<div class="containerItem">
+  <nav class="navbar navbar-dark bg-primary" style="background-color: #0063ae !important;">
+
+    <div class="container-fluid">
+      <span class="navbar-brand mb-0 h1 fw-bold">SISTEMA DE SALDOS ACUMULADOS</span>
+    </div>
+  </nav>
+  <fieldset class="linea-caja col-sm-12 mb-5 pb-5" style="border-top: 0;">
+    <div class="container-fluid px-4">
+      <div class="col-12 pt-4">
+        <fieldset class="linea-caja col-sm-12 pb-2">
+          <legend>
+            <button style="background-color: #ffffff !important; border: #e9ecef;">
+              Filtros de búsqueda
+            </button>
+          </legend>
+          <!--form [formGroup]="formService.getForm">
+            <div class="row">
+              <div class="col-sm-8 col-lg-7" style="font-size: 13px;">
+                <div class="col-lg-12">
+                  <div class="mb-3 row">
+                    <label class="col-sm-2 col-lg-4 col-form-label">RUC (*)</label>
+                    <div class="col-sm-10 col-lg-8">
+                      <input type="text" id="numRuc" formControlName="numRuc"
+                         onlyNumber class="form-control shadow-none"
+                        placeholder="Ingrese número ruc" maxlength="11"
+                        [class.is-invalid]="formService.fieldNumRuc?.invalid && (formService.fieldNumRuc?.touched || formService.fieldNumRuc?.dirty)" />
+                      <div class="invalid-feedback"
+                        *ngIf="formService.fieldNumRuc?.invalid && (formService.fieldNumRuc?.touched || formService.fieldNumRuc?.dirty)">
+                        <div *ngIf="formService.fieldNumRuc?.hasError('required')">Debe ingresar un RUC</div>
+                        <div *ngIf="formService.fieldNumRuc?.hasError('pattern')">Debe ingresar un RUC válido</div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="mb-3 row">
+                    <label class="col-sm-2 col-lg-4 col-form-label">Nombre o razón social</label>
+                    <div class="col-sm-10 col-lg-8">
+                      <input type="text" class="form-control shadow-none" formControlName="nomRazonSocial"
+                        placeholder="Razón social" />
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </form-->
+        </fieldset>
+      </div>
+    </div>
+    <br>
+    <fieldset class="linea-caja" >
+      <div class="container-fluid px-4">
+        <div class="row">
+        </div>
+      </div>
+    </fieldset>
+    <br>
+    <div class="col-sm-12 col-lg-12 row" >
+      <div class="col-sm-3"></div>
+      <div class="col-sm-9" style="text-align: end;">
+        <button type="button" class="btn-sunat shadow-none px-4 pb-2" data-bs-placement="bottom"><i class="fa fa-file-excel-o" aria-hidden="true"></i>&nbsp;
+          Aceptar</button>
+
+      </div>
+    </div>
+  </fieldset>
+
+</div>
+<ngx-spinner bdColor="rgba(255,255,255,0.45)" color="rgba(28,27,27,0.64)" size="medium" type="ball-scale"
+  [fullScreen]="true"></ngx-spinner>

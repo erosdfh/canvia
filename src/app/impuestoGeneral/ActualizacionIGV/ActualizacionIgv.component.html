@@ -15,56 +15,56 @@
               Componente
             </button>
           </legend>
-          <!--form [formGroup]="formService.getForm">
-            <div class="row">
-              <div class="col-sm-8 col-lg-7" style="font-size: 13px;">
-                <div class="col-lg-12">
-                  <div class="mb-3 row">
-                    <label class="col-sm-2 col-lg-4 col-form-label">RUC (*)</label>
-                    <div class="col-sm-10 col-lg-8">
-                      <input type="text" id="numRuc" formControlName="numRuc"
-                         onlyNumber class="form-control shadow-none"
-                        placeholder="Ingrese número ruc" maxlength="11"
-                        [class.is-invalid]="formService.fieldNumRuc?.invalid && (formService.fieldNumRuc?.touched || formService.fieldNumRuc?.dirty)" />
-                      <div class="invalid-feedback"
-                        *ngIf="formService.fieldNumRuc?.invalid && (formService.fieldNumRuc?.touched || formService.fieldNumRuc?.dirty)">
-                        <div *ngIf="formService.fieldNumRuc?.hasError('required')">Debe ingresar un RUC</div>
-                        <div *ngIf="formService.fieldNumRuc?.hasError('pattern')">Debe ingresar un RUC válido</div>
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-                <div class="col-lg-12">
-                  <div class="mb-3 row">
-                    <label class="col-sm-2 col-lg-4 col-form-label">Nombre o razón social</label>
-                    <div class="col-sm-10 col-lg-8">
-                      <input type="text" class="form-control shadow-none" formControlName="nomRazonSocial"
-                        placeholder="Razón social" />
-                    </div>
-                  </div>
-                </div>
+          <form [formGroup]="getForm">
+            <div class="col-sm-3">
+              <ng-select formControlName="componente" appearance="outline" bindLabel="valor"
+                bindValue="codigo" [closeOnSelect]="false" [items]="listaComponente" [clearable]="true" (change)="selComp()"
+                placeholder="Seleccione una opción" [searchable]="false" >
+              </ng-select>
             </div>
-          </form-->
+          </form>
+          <br><br><br>
         </fieldset>
       </div>
     </div>
     <br>
-    <fieldset class="linea-caja" >
-      <div class="container-fluid px-4">
-        <div class="row">
-        </div>
-      </div>
-    </fieldset>
-    <br>
-    <div class="col-sm-12 col-lg-12 row" >
-      <div class="col-sm-3"></div>
-      <div class="col-sm-9" style="text-align: end;">
-        <button type="button" class="btn-sunat shadow-none px-4 pb-2" data-bs-placement="bottom"><i class="fa fa-file-excel-o" aria-hidden="true"></i>&nbsp;
-          Aceptar</button>
-
+    <div class="container-fluid px-4">
+      <div class="col-12 pt-4">
+        <fieldset class="linea-caja col-sm-12 pb-2">
+          <legend>
+            <button style="background-color: #ffffff !important; border: #e9ecef;">
+              Filtros de búsqueda
+            </button>
+          </legend>
+          <div class="container-fluid px-4">
+            <div class="row">
+            </div>
+          </div>
+          <div class="col-sm-12 col-lg-12 row">
+            <div class="col-sm-2"><label for="" >Motivo de actualización (*)</label></div>
+            <div class="col-sm-10">
+              <form [formGroup]="getForm">
+                <div class="col-sm-6">
+                  <ng-select formControlName="motivo" appearance="outline" bindLabel="valor"
+                    bindValue="codigo" [closeOnSelect]="false" [items]="listaMotivo" [clearable]="true" (change)="selComp()"
+                    placeholder="Seleccione una opción" [searchable]="false" >
+                  </ng-select>
+                </div>
+              </form>
+            </div>
+            <div class="col-sm-3"><label for="" style="color: red;" >(*) Campos Obligatorios</label></div>
+            <div class="col-sm-9" style="text-align: end;">
+              <button type="button" class="btn-sunat shadow-none px-4 pb-2" data-bs-placement="bottom" (click)="aceptar()"><i
+                  class="fa fa-check" aria-hidden="true"></i>&nbsp;
+                Aceptar</button>
+      
+            </div>
+          </div>
+        </fieldset>
       </div>
     </div>
+    <br>
+    
   </fieldset>
 
 </div>
