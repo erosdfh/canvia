@@ -36,6 +36,11 @@ export class ActualizacionIGVComponent implements OnInit {
     console.log("aceptarr")
     this.router.navigate(["actualizacion-IGV/filtro"]);
   }
+
+  aceptar1(){
+    console.log("aceptarr")
+    this.router.navigate(["actualizacion-IGV/modif"]);
+  }
   
    
 }

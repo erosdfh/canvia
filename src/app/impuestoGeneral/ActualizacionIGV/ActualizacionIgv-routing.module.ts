@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ActualizacionIGVComponent } from './ActualizacionIgv.component';
 import { FiltroComponent } from './Filtro/Filtro.component';
+import { ModSaldoIGVComponent } from './ModSaldoIGV/ModSaldoIGV.component';
 
 const routes: Routes = [
   {
@@ -9,6 +10,9 @@ const routes: Routes = [
   },
   {
     path: 'filtro', component:  FiltroComponent
+  },
+  {
+    path: 'modif', component:  ModSaldoIGVComponent
   }
 ];
 

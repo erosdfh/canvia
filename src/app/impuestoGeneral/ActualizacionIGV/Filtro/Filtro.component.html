@@ -15,37 +15,7 @@
               Filtros de búsqueda
             </button>
           </legend>
-          <!--form [formGroup]="formService.getForm">
-            <div class="row">
-              <div class="col-sm-8 col-lg-7" style="font-size: 13px;">
-                <div class="col-lg-12">
-                  <div class="mb-3 row">
-                    <label class="col-sm-2 col-lg-4 col-form-label">RUC (*)</label>
-                    <div class="col-sm-10 col-lg-8">
-                      <input type="text" id="numRuc" formControlName="numRuc"
-                         onlyNumber class="form-control shadow-none"
-                        placeholder="Ingrese número ruc" maxlength="11"
-                        [class.is-invalid]="formService.fieldNumRuc?.invalid && (formService.fieldNumRuc?.touched || formService.fieldNumRuc?.dirty)" />
-                      <div class="invalid-feedback"
-                        *ngIf="formService.fieldNumRuc?.invalid && (formService.fieldNumRuc?.touched || formService.fieldNumRuc?.dirty)">
-                        <div *ngIf="formService.fieldNumRuc?.hasError('required')">Debe ingresar un RUC</div>
-                        <div *ngIf="formService.fieldNumRuc?.hasError('pattern')">Debe ingresar un RUC válido</div>
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-                <div class="col-lg-12">
-                  <div class="mb-3 row">
-                    <label class="col-sm-2 col-lg-4 col-form-label">Nombre o razón social</label>
-                    <div class="col-sm-10 col-lg-8">
-                      <input type="text" class="form-control shadow-none" formControlName="nomRazonSocial"
-                        placeholder="Razón social" />
-                    </div>
-                  </div>
-                </div>
-            </div>
-          </form-->
+         
         </fieldset>
       </div>
     </div>

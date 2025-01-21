@@ -9,11 +9,13 @@ import { SharedModule } from '../shared/shared.module';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { TableModule } from 'primeng/table';
 import { FiltroComponent } from './Filtro/Filtro.component';
+import { ModSaldoIGVComponent } from './ModSaldoIGV/ModSaldoIGV.component';
 
 @NgModule({
   declarations: [
     ActualizacionIGVComponent,
-    FiltroComponent
+    FiltroComponent,
+    ModSaldoIGVComponent
   ],
   imports: [
     ActualizacionIGVRoutingModule,
